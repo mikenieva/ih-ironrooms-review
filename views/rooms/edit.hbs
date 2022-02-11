@@ -1,0 +1,17 @@
+<h1>Editar cuarto</h1>
+
+
+<form action="/rooms/{{singleRoom._id}}/edit" method="POST">
+
+	<label>Nombre</label>
+	<input type="text" name="name" value="{{singleRoom.name}}"  />
+
+	<label>Descripción</label>
+	<input type="text" name="description" value="{{singleRoom.description}}" />
+
+	<label>Imagen (URL)</label>
+	<input type="text" name="imageUrl" value="{{singleRoom.imageUrl}}" />
+
+	<button type="submit">Editar</button>
+
+</form>

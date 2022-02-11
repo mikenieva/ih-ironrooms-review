@@ -1,0 +1,12 @@
+<h1>Listado de cuartos disponibles</h1>
+
+{{#each rooms }}
+
+	<h2>Nombre: {{name}}</h2>
+	<p>Descripción: {{description}}</p>
+
+	<a href="/rooms/{{_id}}">Ver detalles</a>
+
+	<hr />
+
+{{/each}}
